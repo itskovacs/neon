@@ -119,6 +119,10 @@ html {
     padding: revert;
     list-style: revert;
   }
+  
+  markdown { 
+    max-width: 100%;
+  }
 
   h1 {
     font-size: 36px;
