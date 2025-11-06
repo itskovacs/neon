@@ -307,7 +307,8 @@
                   <div class="event-box-text dark:text-gray-300">
                     <div>
                       <span class="flex-[0_0_10ch]">Name</span>
-                      <span class="truncate">{{ sample.name }}</span>
+                      <span class="cursor-pointer truncate" pTooltip="Click to copy"
+                        [cdkCopyToClipboard]="sample.name">{{ sample.name }}</span>
                     </div>
                     <div>
                       <span class="flex-[0_0_10ch]">Date</span>
