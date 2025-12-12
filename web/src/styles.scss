@@ -233,3 +233,34 @@ html {
     transform: rotate(360deg);
   }
 }
+
+.santa-card::before {
+  content: '';
+  position: absolute;
+  top: -40px;
+  right: -36px;
+  width: 90px;
+  height: 90px;
+  background: url('/hat.png') no-repeat top right / contain;
+  transform: rotate(6deg);
+  transform-origin: top right;
+  z-index: 40;
+  pointer-events: none;
+}
+
+.santa-card.santa-sm::before {
+  top: -28px;
+  right: -31px;
+  width: 70px;
+  height: 60px;
+  transform: rotate(9deg);
+}
+
+.santa-card.santa-sm-reverse::before {
+  top: -28px;
+  right: unset;
+  left: -101px;
+  width: 70px;
+  height: 60px;
+  transform: scaleX(-1) rotate(9deg);
+}

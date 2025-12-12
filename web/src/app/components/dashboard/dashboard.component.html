@@ -19,7 +19,7 @@
   <div class="mt-4 grid md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4 slide-y">
     @defer () {
     @for (case of displayedCases; track case.guid) {
-    <p-card class="relative rounded-xl cursor-pointer h-full slide-y" [routerLink]="'/case/' + case.guid">
+    <p-card class="relative rounded-xl cursor-pointer h-full slide-y santa-card" [routerLink]="'/case/' + case.guid">
       <div class="p-2 flex flex-col gap-1">
         <div class="shrink text-sm text-slate-300">#{{ case.tsid || 'N/A' }}</div>
         <div class="flex items-center gap-2 text-lg font-bold truncate">{{ case.name }} @if (case.closed) {<span

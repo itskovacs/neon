@@ -30,7 +30,7 @@
       </div>
     </div>
 
-    <p-card styleClass="mt-4 md:mt-8">
+    <p-card styleClass="relative mt-4 md:mt-8 santa-card">
       <div class="flex justify-between items-center">
         <h1 class="mb-0 p-4 text-xl font-medium theme-text md:text-3xl">Report</h1>
         @if (editModeCase) {
@@ -65,7 +65,7 @@
   </div>
 
   <div class="mt-4">
-    <p-card styleClass="mt-4">
+    <p-card styleClass="relative mt-4 santa-card">
       <div class="flex justify-between items-center">
         <h1 class="mb-0 p-4 text-xl font-medium theme-text md:text-3xl">Samples</h1>
         <p-button icon="pi pi-plus" styleClass="theme-text" text (click)="uploadInput.click()" />
@@ -312,7 +312,7 @@
               </div>
 
               <div>
-                <div class="event-box dark:bg-surface-800">
+                <div class="relative event-box dark:bg-surface-800 santa-card santa-sm-reverse">
                   <div class="text-lg flex items-center grow theme-text">
                     <i class="material-symbols-outlined mr-1">biotech</i>Metadata
                   </div>
